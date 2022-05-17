@@ -1,14 +1,14 @@
 body{
-    font-family: 'Heebo', sans-serif;
-    /* background-color: rgb(242, 235, 224, 0.3); */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    /* background-color: #B2B2B2; */
 }
 .initext{
     /* background-image: url('Marca-ITBA-Color-ALTA.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; */
-    background-color: rgba(0, 0, 0, 0.05); 
-    border: 5px rgb(0, 0, 0) solid;
+    background-color: #b2b2b2; 
+    border: 5px #1D71B8 solid;
     border-radius: 3rem;
     font-size: 24px;
     text-align: center;
@@ -19,9 +19,9 @@ ul{
     max-width: 250px;
     margin: 30px auto;
     /* padding: 30px 0; */
-    background-color: rgba(0,0,0,0.1);
+    background-color: #b2b2b2;
     background-size: auto;
-    border: rgba(0,0,0,0.3) solid;
+    border: #1D71B8 solid;
     border-radius: 5px;
     text-align: center;
     font-size: 28px;
@@ -32,18 +32,18 @@ input{
     padding: 9px;
     text-align: center;
     border-radius: 3px;
-    border: grey 0.5px solid;
+    border: #1D71B8 0.5px solid;
 }
 button{
     border-radius: 3px;
-    border: grey 0.5px solid;
+    border: #b2b2b2 0.5px solid;
 }
 .margen{
     color: black;
-    background-color: blue;
+    background-color: #1D71B8;
     margin: 10px;
     padding: 10px;
-    border: 5px black solid;
+    border: 5px #1D71B8;
     width: 335px;
     overflow: hidden;
 }
@@ -68,10 +68,10 @@ header{
     background-position: center;
     text-align: right;
     margin: 10px 50px 35px 50px;
-    border-bottom: 3px #00249A solid;
+    border-bottom: 3px #1D71B8 solid;
 }
 mark{
     background-color: rgb(0, 36, 154, 0.2);
-    border-bottom: black solid 0.2px;
+    border-bottom:#1D71B8 solid 0.2px;
     border-radius: 4px
 }
