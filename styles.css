@@ -4,8 +4,6 @@ body{
 }
 
 #content{
-    border: 5px rgb(0, 0, 0) solid;
-    border-radius: 3rem;
     font-size: 24px;
     text-align: center;
 }
