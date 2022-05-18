@@ -1,33 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Inicio de sesion ITBANK.</title>
-    <link rel="stylesheet" href="inicio-sesion.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap" rel="stylesheet"/>
-</head>
-<body>
-    <div>
-        <header>
-            <h3>
-                <mark>Online Banking.</mark>
-            </h3>
-            <!-- <mark>Online Banking.</mark> -->
-        </header>
-    </div>
-    <div class="initext">
-        <h1>Bienvenido a ItBank!</h1>
-        <h2>Clickee <a href="registro.html" target="_self">aqui</a> para registrarse.</h2>
-        <h2>Para iniciar sesion:</h2>
-    </div>
-    <span class="id-args">
-        <ul>
-            <li style="visibility: hidden">.</li>
-            <li><input class="username" placeholder="Usuario"></input></li>
-            <li><input class="password" placeholder="Password"></input></li>
-            <li><button class="button" type="button"><a href="home-page.html" target="_self">Iniciar Sesion</a></button></li>
-        </ul>
-    </span>
-</body>
+    <head>
+        <title>Inicio de sesion ITBANK.</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200&display=swap" rel="stylesheet"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+    </head>
+    <body>
+        <div class="container-fluid bg-light">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <a class="navbar-brand" href="">
+                            <img src="Isologo.png" class="img-fluid float-start" alt="Logo ITBANK" width="336" height="115">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        
+        <div id="content">
+            <h1>Bienvenido a ItBank!</h1>
+            <h2>Clickee <a href="registro.html" target="#">aqui</a> para registrarse.</h2>
+            <h2>Para iniciar sesion:</h2>
+            <span class="id-args">
+                <ul id="list">
+                    <li style="visibility: hidden">.</li>
+                    <li><input class="username" placeholder="Usuario"></input></li>
+                    <li><input class="password" placeholder="Password"></input></li>
+                    <li><button class="button" type="button"><a href="home-page.html" target="#">Iniciar Sesion</a></button></li>
+                </ul>
+            </span>
+        </div>
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+        <footer class="bg-light text-center fixed-bottom text-dark mt-5 fs-3">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                Full-Stack Developer
+            </div>
+        </footer>
+    </body>
 </html>
