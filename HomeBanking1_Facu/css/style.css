@@ -88,6 +88,17 @@ h1,h2,h3,h4,h5,h6{
     margin-left: auto;
     margin-right: auto;
 }
+.border-line-2{
+    width: 700px;
+    height: 1px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    display: block;
+    text-align: center;
+    background-color:  #03a9f4;
+    margin-left: auto;
+    margin-right: auto;
+}
 .subtitle-caption{
     font-weight: 400;
     margin-top: 20px;
@@ -211,6 +222,14 @@ BUTTONS
 }
 .btn:focus{
     outline: 0;
+}
+.btn-white-log{
+    color:#fff;
+    padding: 0px;
+    border: 1px solid #fff;
+    padding: 10px 10px;
+    background-color: transparent;
+    margin-right: 305px;
 }
 .btn-white{
     color:#fff;
