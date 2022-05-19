@@ -3,12 +3,13 @@ body{
     background-color: rgb(242, 235, 224, 0.3);
 }
 
-#content{
-    font-size: 24px;
-    text-align: center;
+.fondo{
+    background-image: url('./BuenosAires.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-#list{
+#lista{
     height: 250px;
     max-width: 400px;
     margin: 30px auto;
@@ -22,7 +23,7 @@ body{
     padding-left: 0;
 }
 
-input{
+/*input{
     padding: 9px;
     text-align: center;
     border-radius: 3px;
@@ -64,4 +65,34 @@ mark{
     background-color: rgb(0, 36, 154, 0.2);
     border-bottom: black solid 0.2px;
     border-radius: 4px
+}*/
+
+#loginForm{
+    border-radius: 10px;
+    margin-bottom: 10%;
+    width: 30%;
+}
+
+.loginInput{
+    border: none;
+    height: 3em;
+    width: 100%;
+    border-bottom: 0.2em solid black;
+    transition:  0.5s ease-in-out;
+}
+
+.loginInput:active,
+.loginInput:focus,
+.loginInput:hover {
+	outline: none;
+	border-bottom-color: #BBAEA5;
+}
+
+.loginInput:hover {
+    background-color: gainsboro;
+}
+
+*{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
