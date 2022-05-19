@@ -1,5 +1,11 @@
-# FSD-CLASE2
-Clase 2 del curso Full Stack Developper, primera vez usando github
+# ITBANK-GRUPO ATLAS
+Projecto de armado de Web para homebanking.
 
-## Me llamo augusto
-Testing 
+## Integrantes:
+Guillermina Carrasco Suarez
+Ignacio Gabriel Martinez
+Lautaro Joaquin Fonseca
+Augusto Contreras Braillard
+Lopez Rosa Juan Ignacio
+Facundo Barrionuevo
+Ciro Andres Patiño
