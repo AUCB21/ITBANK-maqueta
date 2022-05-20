@@ -1,0 +1,61 @@
+/* Por el amor de mi Salud Mental:
+
+> Documenten el CSS en cuanto mas puedan para saber que Tags se usan en que pagina
+> Usen clases para componentes reutilizables (Login Form, Headers, Footers)
+> Usen IDs para CSS que solo se aplica a un elemento
+> Si algo queda confuso en el codigo, expliquen lo que hace
+> Expliquen como funcionan sus animaciones, para asi poder mejorarlas/editarlas
+
+> Atte: Lauti
+
+*/
+
+/* Universales */
+
+*{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Login Page & Sign In Page */
+
+#background{
+    background-image: url('/images/bonaerense/BuenosAires.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#loginForm{
+    margin-bottom: 10%;
+    width: 30%;
+}
+
+.loginInput{
+    border: none;
+    height: 3em;
+    width: 100%;
+    border-bottom: 0.2em solid black;
+    transition:  0.5s ease-in-out;
+}
+
+.loginInput:active,
+.loginInput:focus,
+.loginInput:hover {
+	outline: none;
+	border-bottom-color: #BBAEA5;
+}
+
+.loginInput:hover {
+    background-color: gainsboro;
+}
+
+/* Home Page */
+
+#imageBanner{
+    background-image: url('/images/bonaerense/Obelisk.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50em;
+}
+
+
