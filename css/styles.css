@@ -42,7 +42,7 @@
 .loginInput:focus,
 .loginInput:hover {
 	outline: none;
-	border-bottom-color: #BBAEA5;
+	border-bottom-color: #b2b2b2;
 }
 
 .loginInput:hover {
@@ -57,5 +57,3 @@
     background-repeat: no-repeat;
     height: 50em;
 }
-
-
