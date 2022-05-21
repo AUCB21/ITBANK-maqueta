@@ -26,36 +26,18 @@
 }
 
 #loginForm{
-    margin-bottom: 10%;
-    width: 30%;
-}
-
-.loginInput{
-    border: none;
-    height: 3em;
-    width: 100%;
-    border-bottom: 0.2em solid black;
-    transition:  0.5s ease-in-out;
-}
-
-.loginInput:active,
-.loginInput:focus,
-.loginInput:hover {
-	outline: none;
-	border-bottom-color: #BBAEA5;
-}
-
-.loginInput:hover {
-    background-color: gainsboro;
+    width: fit-content;
+    margin-bottom: 10rem;
 }
 
 /* Home Page */
 
-#imageBanner{
+#homeBackground {
     background-image: url('/images/bonaerense/Obelisk.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50em;
 }
 
-
+#homeHero {
+    width: fit-content;
+}

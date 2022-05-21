@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <title>Inicio de sesion ITBANK.</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -8,6 +8,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+            window.onload = function() {
+                document.getElementById("tab-login").addEventListener('click', changeToLogin);
+                document.getElementById("tab-register").addEventListener('click', changeToRegister);
+                document.getElementById("register-link").addEventListener('click', changeToRegister);
+            }
+
+            function changeToRegister() {
+                document.getElementById('pills-login').className = document.getElementById('pills-login').className.replace(/(?:^|\s)show active(?!\S)/g,'');
+                document.getElementById('pills-register').className += " show active";
+                document.getElementById('tab-login').className = document.getElementById('tab-login').className.replace(/(?:^|\s)active(?!\S)/g,'');
+                document.getElementById('tab-register').className += " active";
+            }
+            function changeToLogin() {
+                document.getElementById('pills-register').className = document.getElementById('pills-register').className.replace(/(?:^|\s)show active(?!\S)/g,'')
+                document.getElementById('pills-login').className += " show active"
+                document.getElementById('tab-register').className = document.getElementById('tab-register').className.replace(/(?:^|\s)active(?!\S)/g,'');
+                document.getElementById('tab-login').className += " active";
+            }
+        </script>
     </head>
     <body id="background">
         <div class="text-center pb-5">
@@ -15,47 +35,106 @@
                 <img src="images/logos/Logo-Original.png" class="img-fluid" alt="Logo ITBANK" width="336" height="115">
             </a>
         </div>
-        
-        <div class="container bg-light py-5 border-1" id="loginForm">
-            <form class="justify-content-center">
-                <div class="mb-3 mx-auto w-75" id="loginField">
-                  <input type="email" class="loginInput" placeholder="Direccion de E-Mail">
+
+        <div class="d-flex rounded-5 p-5 mx-auto bg-light" id="loginForm">
+            <div style="width: 26rem;">
+                <ul class="nav nav-pills nav-justified mb-3" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#" role="tab"
+                        aria-controls="pills-login">Ingresar</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="tab-register" data-mdb-toggle="pill" href="#" role="tab"
+                        aria-controls="pills-register">Registrarse</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+                        <form>
+                            <div class="form-outline mb-4">
+                                <input type="email" id="loginName" class="form-control" />
+                                <label class="form-label" for="loginName">E-Mail o Usuario</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="password" id="loginPassword" class="form-control" />
+                                <label class="form-label" for="loginPassword">Contraseña</label>
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-md-6 d-flex justify-content-center">
+                                    <div class="form-check mb-3 mb-md-0">
+                                        <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                                        <label class="form-check-label" for="loginCheck"> Recuerdame </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 d-flex justify-content-center">
+                                    <a href="#!">Olvidaste tu Contraseña</a>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Ingresá</button>
+                            <div class="text-center">
+                                <p>Todavía no sos Miembro? <a id="register-link" href="#">Registrate</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+                        <form>
+                            <div class="form-outline mb-4">
+                                <input type="text" id="registerName" class="form-control" />
+                                <label class="form-label" for="registerName">Nombre Completo</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="text" id="registerUsername" class="form-control" />
+                                <label class="form-label" for="registerUsername">Usuario</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="email" id="registerEmail" class="form-control" />
+                                <label class="form-label" for="registerEmail">E-Mail</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="password" id="registerPassword" class="form-control" />
+                                <label class="form-label" for="registerPassword">Contraseña</label>
+                            </div>
+                            <div class="form-outline mb-4">
+                                <input type="password" id="registerRepeatPassword" class="form-control" />
+                                <label class="form-label" for="registerRepeatPassword">Confirmar Contraseña</label>
+                            </div>
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+                                aria-describedby="registerCheckHelpText" />
+                                <label class="form-check-label" for="registerCheck">
+                                Leí y estoy de acuerdo con los terminos
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block mb-3">Registrate</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="mb-3 mx-auto w-75" id="loginField">
-                    <input type="text" class="loginInput" placeholder="Usuario">
-                </div>
-                <div class="mb-3 mx-auto w-75" id="loginField">
-                    <input type="password" class="loginInput" placeholder="Contraseña">
-                  </div>
-                <div class="mt-5 mx-auto w-75 text-center">
-                    <button class="btn btn-lg btn-success" type="submit">Registrate</button>
-                </div>
-              </form>
+            </div>
         </div>
-        
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <footer class="py-5 bg-light border-top">
             <div class="container">
                 <div class="row">
                     <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
+                    <h5>Sección</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Temporal</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Temporal</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Temporal</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Temporal</a></li>
                     </ul>
                 </div>
           
                 <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
+                    <h5>Sección</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Temporal</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Temporal</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Temporal</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Temporal</a></li>
                     </ul>
                 </div>
           
