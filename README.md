@@ -6,6 +6,6 @@ Projecto de armado de Web para homebanking.
 * Ignacio Gabriel Martinez
 * Lautaro Joaquin Fonseca
 * Augusto Contreras Braillard
-* Lopez Rosa Juan Ignacio
+* Juan Ignacio Lopez Rosa 
 * Facundo Barrionuevo
 * Ciro Andres Patiño
