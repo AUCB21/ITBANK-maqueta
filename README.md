@@ -7,7 +7,7 @@ Projecto de armado de Web para homebanking.
 |**Ignacio Gabriel Martinez**    |[ignamartinezz](https://github.com/ignamartinezz)  |
 |**Lautaro Joaquin Fonseca**     |[Whoolister](https://github.com/Whoolister)        |
 |**Augusto Contreras Braillard** |[AUCB21](https://github.com/AUCB21)                |
-|**Lopez Rosa Juan Ignacio**     |[Juaani](https://github.com/Juaani)                |
+|**Juan Ignacio Lopez Rosa**     |[Juaani](https://github.com/Juaani)                |
 |**Facundo Barrionuevo**         |[faqbarrionuevo](https://github.com/faqbarrionuevo)|
 |**Ciro Andres Patiño**          |[ciro-aps](https://github.com/ciro-aps)            |
 
