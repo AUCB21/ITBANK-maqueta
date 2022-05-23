@@ -6,6 +6,12 @@
                 text-decoration: none;
                 color: white;
             }
+            #azul{
+                background-color: #312783;
+            }
+            #beige{
+                background-color: #b2b2b2;
+            }
         </style>
         <title>Inicio de sesión - ITBANK</title>
 
@@ -48,7 +54,7 @@
         <div class="d-flex rounded-5 p-5 mx-auto bg-light" id="loginForm">
             <div style="width: 26rem;">
                 <ul class="nav nav-pills nav-justified mb-3" role="tablist">
-                    <li class="nav-item" role="presentation">
+                    <li id="azul" class="nav-item" role="presentation">
                         <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="./homebanking.html" role="tab"
                         aria-controls="pills-login">Ingresar</a>
                     </li>
@@ -79,7 +85,7 @@
                                     <a href="#!">Olvidé mi contraseña</a>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block mb-4"><a href="./homebanking.html" id="link">Ingresá</a></button>
+                            <button id="azul" type="submit" class="btn btn-block mb-4"><a href="./homebanking.html" id="link">Ingresá</a></button>
                             <div class="text-center">
                                 <p>¿Todavía no sos miembro? <a id="register-link" href="#">Registrate</a></p>
                             </div>
