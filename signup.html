@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <style>
+            #link{
+                text-decoration: none;
+                color: white;
+            }
+        </style>
         <title>Inicio de sesión - ITBANK</title>
 
         <link rel="icon" href="./images/logos/ISOLOGO ITBANK_Mesa de trabajo 1.png">
@@ -34,7 +40,7 @@
     </head>
     <body id="background">
         <div class="text-center pb-5 bg-gradient">
-            <a href="/home.html">
+            <a href="/ITBANK-maqueta/home.html">
                 <img src="images/logos/logomarginado-08.png" class="img-fluid" alt="Logo ITBANK" width="336" height="115">
             </a>
         </div>
@@ -43,7 +49,7 @@
             <div style="width: 26rem;">
                 <ul class="nav nav-pills nav-justified mb-3" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="#" role="tab"
+                        <a class="nav-link active" id="tab-login" data-mdb-toggle="pill" href="./homebanking.html" role="tab"
                         aria-controls="pills-login">Ingresar</a>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -73,7 +79,7 @@
                                     <a href="#!">Olvidé mi contraseña</a>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-block mb-4">Ingresá</button>
+                            <button type="submit" class="btn btn-primary btn-block mb-4"><a href="./homebanking.html" id="link">Ingresá</a></button>
                             <div class="text-center">
                                 <p>¿Todavía no sos miembro? <a id="register-link" href="#">Registrate</a></p>
                             </div>
